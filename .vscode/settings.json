@@ -1,0 +1,20 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "yarn.lock": true,
+    "yarn-error.log": true
+  },
+  "flow.useNPMPackagedFlow": true,
+  "javascript.validate.enable": false,
+  "files.associations": {
+    ".babelrc": "yaml",
+    ".eslintrc": "yaml",
+    ".prettierrc": "yaml",
+    ".stylelintrc": "yaml"
+  },
+  "workbench.settings.editor": "json"
+}

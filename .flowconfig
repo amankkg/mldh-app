@@ -1,0 +1,8 @@
+[lints]
+all=warn
+
+[options]
+emoji=true
+esproposal.optional_chaining=enable
+esproposal.nullish_coalescing=enable
+experimental.const_params=true
