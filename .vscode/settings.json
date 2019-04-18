@@ -16,5 +16,7 @@
     ".prettierrc": "yaml",
     ".stylelintrc": "yaml"
   },
-  "workbench.settings.editor": "json"
+  "workbench.settings.editor": "json",
+  "editor.formatOnSave": true,
+  "eslint.autoFixOnSave": true
 }

@@ -1,3 +1,6 @@
+# https://github.com/sindresorhus/eslint-plugin-unicorn
+# https://github.com/prettier/eslint-config-prettier
+# https://github.com/atomixinteractions/eslint-config/tree/master/packages/javascript
 parser: babel-eslint
 parserOptions:
   ecmaVersion: 2019
@@ -6,17 +9,20 @@ env:
   jest: true
 extends:
   - plugin:flowtype/recommended
-  # - plugin:react/recommended
+  - plugin:react/recommended
+  - plugin:unicorn/recommended
   - plugin:jsx-a11y/recommended
   - plugin:compat/recommended
-  - prettier
+  - prettier # turn off some eslint rules in favor of prettier
   - prettier/babel
   - prettier/flowtype
   - prettier/react
+  - prettier/unicorn
 plugins:
   - flowtype
-  - import
   - react
+  - unicorn
+  - import
   - react-hooks
   - jsx-a11y
   - compat
@@ -25,3 +31,8 @@ rules:
   compat/compat: 'error'
   prettier/prettier: 'error'
   react-hooks/rules-of-hooks: 'error'
+  unicorn/prevent-abbreviations:
+    - 'error'
+    - whitelist:
+        props: true
+        ref: true
