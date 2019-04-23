@@ -42,14 +42,15 @@
   "browserslist": [
     "last 2 Chrome versions",
     "last 2 Firefox versions",
-    "last 2 Safari versions"
+    "last 2 Safari versions",
+    "IE 8"
   ],
-  "husky": {
+  "_husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   },
-  "lint-staged": {
+  "_lint-staged": {
     "linters": {
       "*.js": [
         "eslint --fix",
