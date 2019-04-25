@@ -5,8 +5,9 @@ env:
   browser: true
   jest: true
 extends:
-  - plugin:flowtype/recommended
+  - react-app
   - plugin:react/recommended
+  - plugin:flowtype/recommended
   - plugin:unicorn/recommended
   - plugin:jsx-a11y/recommended
   - plugin:compat/recommended
@@ -32,4 +33,7 @@ rules:
     - 'error'
     - whitelist:
         props: true
+        Props: true
         ref: true
+        TState: true
+        TProps: true
